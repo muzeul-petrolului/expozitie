@@ -19,12 +19,10 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        h1 {
-            text-align: center;
-        }
         p {
             text-align: justify;
-            line-height: 1.6;
+            line-height: 1.4; /* Reduced line spacing */
+            font-size: 19px; /* Slightly increased text size */
         }
         .flag {
             display: block;
@@ -36,30 +34,36 @@
             margin-top: 30px;
         }
         .footer a {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-size: 18px;
-            color: #007BFF;
             text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
         .footer a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
         }
         @media (max-width: 600px) {
             body {
-                padding: 10px; /* Less padding on small screens */
-            }
-            h1 {
-                font-size: 20px; /* Adjust heading size */
+                padding: 10px;
             }
             p, li {
-                font-size: 18px; /* Increase text size for readability */
+                font-size: 18px;
+            }
+            .footer a {
+                font-size: 16px;
+                padding: 8px 16px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-    
-        <img src="Romania_flag.jpg" alt="Romanian Flag" class="flag" style="margin-left: 0;">
+        <img src="romania_flag.jpg" alt="Romanian Flag" class="flag" style="margin-left: 0;">
         <p>
             Petrolul a fost cunoscut, exploatat și utilizat încă din antichitate, o dovadă a acestei afirmații putând fi găsită în scrierile antice și în bogatele dovezi arheologice existente, cum ar fi:
         </p>
@@ -68,7 +72,7 @@
             <li>Tăblițele de la Tărtăria (cele 3 obiecte de lut) care menționează că petrolul era folosit ca medicament;</li>
         </ul>
         <br>
-        <img src="UK_flag.jpg" alt="UK Flag" class="flag" style="margin-left: 0;">
+        <img src="uk_flag.jpg" alt="UK Flag" class="flag" style="margin-left: 0;">
         <p>
             Oil has been known, exploited and used since antiquity, proof of this statement being found in ancient writings and in the rich archaeological evidence available, such as:
         </p>
@@ -77,7 +81,7 @@
             <li>The tablets from Tărtăria (the 3 clay objects) which mention that oil was used as medicine;</li>
         </ul>
         <div class="footer">
-            <a href="https://www.muzeulpetrolului.ro" target="_blank">Mai multe despre Muzeul Petrolului</a>
+            <a href="https://www.muzeulpetrolului.ro" target="_blank">Vizitează site-ul</a>
         </div>
     </div>
 </body>
